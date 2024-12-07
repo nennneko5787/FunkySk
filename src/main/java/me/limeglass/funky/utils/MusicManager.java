@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Set;
 import java.util.Map.Entry;
 
-import com.xxmicloxx.NoteBlockAPI.SongPlayer;
+import com.xxmicloxx.NoteBlockAPI.songplayer.SongPlayer;
 
 public class MusicManager {
 

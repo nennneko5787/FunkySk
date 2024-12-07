@@ -3,11 +3,11 @@ package me.limeglass.funky.listeners;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-import com.xxmicloxx.NoteBlockAPI.NoteBlockPlayerMain;
-import com.xxmicloxx.NoteBlockAPI.SongDestroyingEvent;
-import com.xxmicloxx.NoteBlockAPI.SongEndEvent;
-import com.xxmicloxx.NoteBlockAPI.SongPlayer;
-import com.xxmicloxx.NoteBlockAPI.SongStoppedEvent;
+import com.xxmicloxx.NoteBlockAPI.NoteBlockAPI;
+import com.xxmicloxx.NoteBlockAPI.event.SongDestroyingEvent;
+import com.xxmicloxx.NoteBlockAPI.event.SongEndEvent;
+import com.xxmicloxx.NoteBlockAPI.songplayer.SongPlayer;
+import com.xxmicloxx.NoteBlockAPI.event.SongStoppedEvent;
 
 import me.limeglass.funky.FunkySk;
 import me.limeglass.funky.utils.MusicManager;
@@ -19,7 +19,7 @@ public class MusicListener implements Listener {
 	
 	@EventHandler
 	public void onPlayerJoin(PlayerQuitEvent event) {
-		if (FunkySk.getInstance().getConfig().getBoolean("PlayerDisconnectSong", true)) NoteBlockPlayerMain.stopPlaying(event.getPlayer());
+		if (FunkySk.getInstance().getConfig().getBoolean("PlayerDisconnectSong", true)) NoteBlockAPI.stopPlaying(event.getPlayer());
 	}
 	
 	@EventHandler

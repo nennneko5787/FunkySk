@@ -5,8 +5,8 @@ import java.util.Objects;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.SongPlayer;
-import com.xxmicloxx.NoteBlockAPI.PlayerRangeStateChangeEvent;
+import com.xxmicloxx.NoteBlockAPI.songplayer.SongPlayer;
+import com.xxmicloxx.NoteBlockAPI.event.PlayerRangeStateChangeEvent;
 import ch.njol.skript.lang.Literal;
 import ch.njol.skript.lang.SkriptEvent;
 import ch.njol.skript.lang.SkriptParser;

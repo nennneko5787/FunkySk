@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.Note;
+import com.xxmicloxx.NoteBlockAPI.model.Note;
 
 import ch.njol.skript.classes.Changer.ChangeMode;
 import ch.njol.skript.doc.Description;

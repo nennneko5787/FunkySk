@@ -47,7 +47,7 @@ dependencies {
 	}
 
 	//NoteblockAPI
-	implementation (group: 'com.github.koca2000', name: 'NoteBlockAPI', version: '1.4.4')
+	implementation (group: 'com.github.koca2000', name: 'NoteBlockAPI', version: '1.6.2')
 
 	shade (group: 'org.json', name: 'json', version: '20190722')
 

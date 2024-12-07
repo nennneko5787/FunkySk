@@ -2,8 +2,8 @@ package me.limeglass.funky.elements.expressions;
 
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.Layer;
-import com.xxmicloxx.NoteBlockAPI.Song;
+import com.xxmicloxx.NoteBlockAPI.model.Layer;
+import com.xxmicloxx.NoteBlockAPI.model.Song;
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Name;
 import me.limeglass.funky.lang.FunkyPropertyExpression;

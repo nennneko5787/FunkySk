@@ -9,10 +9,10 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.eclipse.jdt.annotation.Nullable;
 
-import com.xxmicloxx.NoteBlockAPI.SongDestroyingEvent;
-import com.xxmicloxx.NoteBlockAPI.SongEndEvent;
-import com.xxmicloxx.NoteBlockAPI.SongPlayer;
-import com.xxmicloxx.NoteBlockAPI.SongStoppedEvent;
+import com.xxmicloxx.NoteBlockAPI.event.SongDestroyingEvent;
+import com.xxmicloxx.NoteBlockAPI.event.SongEndEvent;
+import com.xxmicloxx.NoteBlockAPI.songplayer.SongPlayer;
+import com.xxmicloxx.NoteBlockAPI.event.SongStoppedEvent;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.lang.SkriptEvent;

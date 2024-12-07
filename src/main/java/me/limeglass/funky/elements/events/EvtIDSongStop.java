@@ -2,10 +2,10 @@ package me.limeglass.funky.elements.events;
 
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.SongPlayer;
-import com.xxmicloxx.NoteBlockAPI.SongStoppedEvent;
-import com.xxmicloxx.NoteBlockAPI.SongDestroyingEvent;
-import com.xxmicloxx.NoteBlockAPI.SongEndEvent;
+import com.xxmicloxx.NoteBlockAPI.songplayer.SongPlayer;
+import com.xxmicloxx.NoteBlockAPI.event.SongStoppedEvent;
+import com.xxmicloxx.NoteBlockAPI.event.SongDestroyingEvent;
+import com.xxmicloxx.NoteBlockAPI.event.SongEndEvent;
 
 import ch.njol.skript.lang.Literal;
 import ch.njol.skript.lang.SkriptEvent;

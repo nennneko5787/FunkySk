@@ -3,8 +3,8 @@ package me.limeglass.funky.elements.expressions;
 import java.util.ArrayList;
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.FadeType;
-import com.xxmicloxx.NoteBlockAPI.SongPlayer;
+import com.xxmicloxx.NoteBlockAPI.model.FadeType;
+import com.xxmicloxx.NoteBlockAPI.songplayer.SongPlayer;
 
 import ch.njol.skript.classes.Changer.ChangeMode;
 import ch.njol.skript.doc.Description;

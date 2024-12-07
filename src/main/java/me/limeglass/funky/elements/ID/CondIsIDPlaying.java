@@ -10,7 +10,7 @@ import me.limeglass.funky.utils.annotations.Patterns;
 
 @Name("ID - Song is playing")
 @Description("Check if a song with an ID is playing.")
-@Patterns("(song|track|music|noteblock) [with] id %string% (1¦is|2¦is(n't| not)) playing")
+@Patterns("(song|track|music|noteblock) [with] id %string% (1Â¦is|2Â¦is(n't| not)) playing")
 public class CondIsIDPlaying extends FunkyCondition {
 
 	public boolean check(Event event) {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.Song;
+import com.xxmicloxx.NoteBlockAPI.model.Song;
 
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Name;

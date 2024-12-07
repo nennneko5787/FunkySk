@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.Layer;
-import com.xxmicloxx.NoteBlockAPI.Note;
+import com.xxmicloxx.NoteBlockAPI.model.Layer;
+import com.xxmicloxx.NoteBlockAPI.model.Note;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.classes.Changer.ChangeMode;
@@ -34,7 +34,7 @@ public class ExprLayerNote extends FunkyExpression<Note> {
 			if (!isNull(event, Number.class)) {
 				notes.add(layer.getNote(tick.intValue()));
 			} else {
-				notes.addAll(layer.getHashMap().values());
+				notes.addAll(layer.getNotesAtTicks().values());
 			}
 		}
 		if (notes == null || notes.isEmpty()) return null;

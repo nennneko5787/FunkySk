@@ -8,8 +8,8 @@ import java.util.ArrayList;
 
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.NBSDecoder;
-import com.xxmicloxx.NoteBlockAPI.Song;
+import com.xxmicloxx.NoteBlockAPI.utils.NBSDecoder;
+import com.xxmicloxx.NoteBlockAPI.model.Song;
 
 import ch.njol.skript.Skript;
 import ch.njol.skript.doc.Description;
@@ -30,7 +30,7 @@ public class ExprSong extends FunkyExpression<Song> {
 	@Override
 	protected Song[] get(Event event) {
 		if (areNull(event)) return null;
-		ArrayList<Song> songs = new ArrayList<Song>();
+		ArrayList<com.xxmicloxx.NoteBlockAPI.model.Song> songs = new ArrayList<>();
 		for (String song : expressions.getAll(event, String.class)) {
 			if (isValidLink(song)) {
 				try {

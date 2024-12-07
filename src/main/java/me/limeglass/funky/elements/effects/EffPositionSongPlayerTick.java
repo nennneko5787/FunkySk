@@ -3,7 +3,7 @@ package me.limeglass.funky.elements.effects;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.PositionSongPlayer;
+import com.xxmicloxx.NoteBlockAPI.songplayer.PositionSongPlayer;
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Name;
 import me.limeglass.funky.lang.FunkyEffect;

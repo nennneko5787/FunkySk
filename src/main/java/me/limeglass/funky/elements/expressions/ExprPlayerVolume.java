@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.NoteBlockPlayerMain;
+import com.xxmicloxx.NoteBlockAPI.NoteBlockAPI;
 import ch.njol.skript.classes.Changer.ChangeMode;
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Name;
@@ -26,7 +26,7 @@ public class ExprPlayerVolume extends FunkyPropertyExpression<Player, Number> {
 		if (isNull(event)) return null;
 		ArrayList<Number> volumes = new ArrayList<Number>();
 		for (Player player : players) {
-			volumes.add(NoteBlockPlayerMain.getPlayerVolume(player));
+			volumes.add(NoteBlockAPI.getPlayerVolume(player));
 		}
 		return volumes.toArray(new Number[volumes.size()]);
 	}
@@ -35,7 +35,7 @@ public class ExprPlayerVolume extends FunkyPropertyExpression<Player, Number> {
 	public void change(Event event, Object[] delta, ChangeMode mode) {
 		if (isNull(event) || delta == null) return;
 		for (Player player : expressions.getAll(event, Player.class)) {
-			NoteBlockPlayerMain.setPlayerVolume(player, ((Number)delta[0]).byteValue());
+			NoteBlockAPI.setPlayerVolume(player, ((Number)delta[0]).byteValue());
 		}
 	}
 }

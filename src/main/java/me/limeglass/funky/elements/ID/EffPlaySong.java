@@ -17,6 +17,7 @@ public class EffPlaySong extends FunkyEffect {
 	protected void execute(Event event) {
 		if (isNull(event, String.class)) return;
 		for (String song : expressions.getAll(event, String.class)) {
+			MusicManager.getSongPlayer(song).setEnable10Octave(true);
 			MusicManager.getSongPlayer(song).setPlaying(true);
 		}
 	}

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.Note;
-import com.xxmicloxx.NoteBlockAPI.NotePitch;
+import com.xxmicloxx.NoteBlockAPI.model.Note;
+import com.xxmicloxx.NoteBlockAPI.model.NotePitch;
 
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Name;

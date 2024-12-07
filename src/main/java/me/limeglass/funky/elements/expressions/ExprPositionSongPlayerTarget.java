@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import org.bukkit.Location;
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.PositionSongPlayer;
+import com.xxmicloxx.NoteBlockAPI.songplayer.PositionSongPlayer;
 import ch.njol.skript.classes.Changer.ChangeMode;
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Name;

@@ -3,9 +3,9 @@ package me.limeglass.funky.elements.ID;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.RadioSongPlayer;
-import com.xxmicloxx.NoteBlockAPI.Song;
-import com.xxmicloxx.NoteBlockAPI.SongPlayer;
+import com.xxmicloxx.NoteBlockAPI.songplayer.RadioSongPlayer;
+import com.xxmicloxx.NoteBlockAPI.model.Song;
+import com.xxmicloxx.NoteBlockAPI.songplayer.SongPlayer;
 
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Name;
@@ -28,6 +28,7 @@ public class EffStartSong extends FunkyEffect {
 			}
 		}
 		if (!isNull(event, String.class)) MusicManager.add(expressions.getSingle(event, String.class), songPlayer);
+		songPlayer.setEnable10Octave(true);
 		songPlayer.setAutoDestroy(true);
 		songPlayer.setPlaying(true);
 	}

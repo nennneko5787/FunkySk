@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import org.bukkit.Location;
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.PositionSongPlayer;
-import com.xxmicloxx.NoteBlockAPI.Song;
+import com.xxmicloxx.NoteBlockAPI.songplayer.PositionSongPlayer;
+import com.xxmicloxx.NoteBlockAPI.model.Song;
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Name;
 import me.limeglass.funky.lang.FunkyExpression;

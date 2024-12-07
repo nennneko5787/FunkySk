@@ -3,7 +3,7 @@ package me.limeglass.funky.elements.effects;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.NoteBlockPlayerMain;
+import com.xxmicloxx.NoteBlockAPI.NoteBlockAPI;
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Name;
 import me.limeglass.funky.lang.FunkyEffect;
@@ -18,7 +18,7 @@ public class EffPlayerStopPlaying extends FunkyEffect {
 	protected void execute(Event event) {
 		if (isNull(event, String.class)) return;
 		for (Player player : expressions.getAll(event, Player.class)) {
-			NoteBlockPlayerMain.stopPlaying(player);
+			NoteBlockAPI.stopPlaying(player);
 		}
 	}
 }

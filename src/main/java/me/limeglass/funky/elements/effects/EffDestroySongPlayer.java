@@ -2,7 +2,7 @@ package me.limeglass.funky.elements.effects;
 
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.SongPlayer;
+import com.xxmicloxx.NoteBlockAPI.songplayer.SongPlayer;
 
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Name;

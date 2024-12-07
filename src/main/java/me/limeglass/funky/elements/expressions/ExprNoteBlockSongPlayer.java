@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import org.bukkit.block.Block;
 import org.bukkit.event.Event;
 
-import com.xxmicloxx.NoteBlockAPI.NoteBlockSongPlayer;
-import com.xxmicloxx.NoteBlockAPI.Song;
+import com.xxmicloxx.NoteBlockAPI.songplayer.NoteBlockSongPlayer;
+import com.xxmicloxx.NoteBlockAPI.model.Song;
 import ch.njol.skript.doc.Description;
 import ch.njol.skript.doc.Name;
 import me.limeglass.funky.lang.FunkyExpression;
